@@ -1,0 +1,9 @@
+Create e Client-Server scenario using TCP protocol
+The Clients traverse all documents in a given directory and look for all .txt and .csv files larger than 100 KB  and smaller than 10 KB
+When the server receives a message from a client, the message is saved in the clients.csv file,
+which exists locally at the server. Each message from each client is stored in a separate line in the same document in the following format:
+
+<IP-Addr_Of-Client> <port-of-client><number-of-files>
+
+You need to enable multiple clients to send data at the same time
+The server listents at port 3398. The order of the messages is not important.
